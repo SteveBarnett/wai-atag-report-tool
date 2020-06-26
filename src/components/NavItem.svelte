@@ -9,6 +9,8 @@
     const isActive = relativeHref === location.name;
     // ? isCurrent : isPartiallyCurrent || isCurrent;
 
+  console.log('-------');
+    console.log('are rel href and loc name equal', relativeHref === location.name);
     console.log('href', href);
     console.log('relativeHref', relativeHref);
     console.log('location', location);
