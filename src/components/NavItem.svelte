@@ -8,7 +8,7 @@
     let relativeHref = href.replace(vars.pathPrefix, '');
     let isActive;
 
-    if (!relativeHref === "") {
+    if (relativeHref === "") {
       relativeHref = "/";
     }
 
