@@ -5,7 +5,7 @@
   export let to = "";
 
   function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
-    const relativeHref = href.replace(vars.pathPrefix, '');
+    let relativeHref = href.replace(vars.pathPrefix, '');
     const isActive = relativeHref === location.pathname;
 
     if (relativeHref === "") {
