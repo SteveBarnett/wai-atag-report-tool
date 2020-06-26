@@ -12,7 +12,7 @@
       relativeHref = "/";
     }
 
-    relativeHref === location.pathname;
+    isActive = relativeHref === location.pathname;
 
     if (isActive) {
       return { class: "active" };
