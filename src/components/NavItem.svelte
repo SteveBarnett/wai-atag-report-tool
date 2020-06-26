@@ -8,6 +8,7 @@
     const isActive = href === vars.pathPrefix ? isCurrent : isPartiallyCurrent || isCurrent;
 
     console.log('href', href);
+    console.log('location', location);
     console.log('isActive', isActive);
     console.log('isCurrent', isCurrent);
 
