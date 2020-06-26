@@ -6,7 +6,7 @@
 
   function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
     const relativeHref = href.replace(vars.pathPrefix, '');
-    const isActive = relativeHref === vars.pathPrefix ? isCurrent : isPartiallyCurrent || isCurrent;
+    const isActive = relativeHref === location ? isCurrent : isPartiallyCurrent || isCurrent;
 
     console.log('href', href);
     console.log('relativeHref', relativeHref);
