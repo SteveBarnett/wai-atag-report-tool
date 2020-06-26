@@ -6,16 +6,18 @@
 
   function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
     const relativeHref = href.replace(vars.pathPrefix, '');
-    const isActive = relativeHref === location.name;
+    const isActive = relativeHref === location.pathname;
     // ? isCurrent : isPartiallyCurrent || isCurrent;
 
   console.log('-------');
-    console.log('are rel href and loc name equal', relativeHref === location.name);
+    console.log('are rel href and loc name equal', relativeHref === location.pathname);
     console.log('href', href);
     console.log('relativeHref', relativeHref);
     console.log('location', location);
     console.log('isActive', isActive);
     console.log('isCurrent', isCurrent);
+
+    debugger;
 
     // The object returned here is spread on the anchor element's attributes
     if (isActive) {
