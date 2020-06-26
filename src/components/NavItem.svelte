@@ -5,9 +5,11 @@
   export let to = "";
 
   function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
-    const isActive = href === vars.pathPrefix ? isCurrent : isPartiallyCurrent || isCurrent;
+    const relativeHref = href.replace(vars.pathPrefix, '');
+    const isActive = relativeHref === vars.pathPrefix ? isCurrent : isPartiallyCurrent || isCurrent;
 
     console.log('href', href);
+    console.log('relativeHref', relativeHref);
     console.log('location', location);
     console.log('isActive', isActive);
     console.log('isCurrent', isCurrent);
